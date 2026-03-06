@@ -1,34 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Site</title>
+  <title>Liam McAfee - My Site</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #f1f1f1;
+    }
+
+    a {
+      color: #bb86fc;
+      text-decoration: none;
+    }
+
+    /* Flexbox layout for main content */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    /* Left side with image */
+    .left {
+      flex: 1 1 200px;
+      padding-right: 20px;
+    }
+
+    .left img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Right side with bio */
+    .right {
+      flex: 2 1 500px;
+    }
+
+    .bio {
+      margin-bottom: 20px;
+    }
+
+    .bio p {
+      line-height: 1.6;
+    }
+
+    /* Resume and contact info */
+    .resume, .contact {
+      margin-top: 40px;
+    }
+
+    .resume a, .contact a {
+      color: #f1f1f1;
+      font-size: 18px;
+    }
+
+    /* Style for projects section */
+    .projects {
+      margin-top: 40px;
+    }
+
+    .projects a {
+      display: block;
+      color: #bb86fc;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Liam McAfee
-  </h1>
-  <h1>Email: thebeaverliam@gmail.com
-  </h1>
-  <h1>Resume:
-  </h1>
+  <h1>Liam McAfee</h1>
+
+  <div class="container">
+    <!-- Left: Image -->
+    <div class="left">
+      <img src="your-image.jpg" alt="Liam McAfee">
+    </div>
+
+    <!-- Right: Bio -->
+    <div class="right">
+      <div class="bio">
+        <p>I'm a Computer Science student with a passion for technology and cybersecurity. I am always exploring new tools and learning how to build innovative solutions. Here's a bit more about me:</p>
+        <ul>
+          <li>Skills: Python, JavaScript, HTML/CSS, Cybersecurity</li>
+          <li>Education: Oregon State University (Class of 2026)</li>
+          <li>Hobbies: Coding, video games, hiking, and playing guitar</li>
+        </ul>
+      </div>
+
+      <!-- Resume -->
+      <div class="resume">
+        <h2>Resume</h2>
+        <p>Check out my <a href="your-resume.pdf" target="_blank">resume</a>.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:thebeaverliam@gmail.com">thebeaverliam@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/thebeaverliam" target="_blank">thebeaverliam</a></p>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects">
+        <h2>Some Projects</h2>
+        <a href="https://github.com/thebeaverliam/project1" target="_blank">Project 1</a>
+        <a href="https://github.com/thebeaverliam/project2" target="_blank">Project 2</a>
+        <a href="https://github.com/thebeaverliam/project3" target="_blank">Project 3</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
-<style>
-  body {
-    background-color: #121212;
-    color: white;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: #f1f1f1;
-  }
-
-  a {
-    color: #bb86fc;
-  }
-
-  /* Additional styling to suit dark mode */
-  .container {
-    background-color: #1e1e1e;
-  }
-</style>
