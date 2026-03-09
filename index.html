@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Liam McAfee - My Site</title>
+  <title>Liam McAfee - Personal Website
+  </title>
   <style>
     body {
       background-color: #121212;
@@ -21,24 +22,27 @@
     }
 
     /* Flexbox layout for main content */
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
 
     /* Left side with image */
-    .left {
-      flex: 1 1 200px;
-      padding-right: 20px;
-    }
+      .left {
+        flex: 1 1 200px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+      }
 
-    .left img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
+      .left img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+      }
 
     /* Right side with bio */
     .right {
@@ -53,7 +57,6 @@
       line-height: 1.6;
     }
 
-    /* Resume and contact info */
     .resume, .contact {
       margin-top: 40px;
     }
@@ -81,17 +84,16 @@
   <div class="container">
     <!-- Left: Image -->
     <div class="left">
-      <img src="your-image.jpg" alt="Liam McAfee">
+      <img src="chesspic.jpg" alt="Liam McAfee">
     </div>
 
     <!-- Right: Bio -->
     <div class="right">
       <div class="bio">
-        <p>I'm a Computer Science student with a passion for technology and cybersecurity. I am always exploring new tools and learning how to build innovative solutions. Here's a bit more about me:</p>
+        <p>Hello, my name is Liam McAfee and I am a Computer Science student at Oregon State University graduating in Spring 2026. I have a strong interest in cybersecurity and enjoy learning how systems work, identifying vulnerabilities, and building secure solutions through coding and technical problem solving. I currently work at Oregon State University's ORTSOC (Oregon Research and Teaching Security Operations Center), a cybersecurity “teaching hospital” where students gain hands-on experience in a real security operations environment by monitoring systems, analyzing threats, and helping provide cybersecurity services to organizations that need protection but lack the resources for a full security team. Through my coursework and work experience, I continue to develop my skills in programming, security operations, and problem solving. My goal is to build a career in cybersecurity where I can help protect systems and infrastructure while continuing to grow as a security professional.</p>
         <ul>
           <li>Skills: Python, JavaScript, HTML/CSS, Cybersecurity</li>
           <li>Education: Oregon State University (Class of 2026)</li>
-          <li>Hobbies: Coding, video games, hiking, and playing guitar</li>
         </ul>
       </div>
 
