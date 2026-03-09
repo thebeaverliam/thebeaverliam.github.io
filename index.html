@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Liam McAfee - Personal Website
-  </title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+<title>Liam McAfee - Personal Website</title>
 
-    h1, h2 {
-      color: #f1f1f1;
-    }
+<style>
 
-    a {
-      color: #bb86fc;
-      text-decoration: none;
-    }
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-    /* Flexbox layout for main content */
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
+/* Center name at top */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
-    /* Left side with image */
-      .left {
-        flex: 1 1 200px;
-        padding-right: 20px;
-        display: flex;
-        justify-content: center;
-      }
+h2 {
+  color: #f1f1f1;
+}
 
-      .left img {
-        width: 250px;
-        height: auto;
-        border-radius: 10px;
-      }
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
 
-    /* Right side with bio */
-    .right {
-      flex: 2 1 500px;
-    }
+/* Main layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
 
-    .bio {
-      margin-bottom: 20px;
-    }
+/* Left image section */
+.left {
+  display: flex;
+  justify-content: center;
+}
 
-    .bio p {
-      line-height: 1.6;
-    }
+/* Bigger image */
+.left img {
+  width: 350px;
+  border-radius: 12px;
+}
 
-    .resume, .contact {
-      margin-top: 40px;
-    }
+/* Right text section */
+.right {
+  max-width: 650px;
+}
 
-    .resume a, .contact a {
-      color: #f1f1f1;
-      font-size: 18px;
-    }
+.bio p {
+  line-height: 1.7;
+}
 
-    /* Style for projects section */
-    .projects {
-      margin-top: 40px;
-    }
+.resume, .contact, .projects {
+  margin-top: 40px;
+}
 
-    .projects a {
-      display: block;
-      color: #bb86fc;
-      margin-bottom: 10px;
-    }
-  </style>
+.resume a, .contact a {
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.projects a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+</style>
 </head>
+
 <body>
-  <h1>Liam McAfee</h1>
 
-  <div class="container">
-    <!-- Left: Image -->
-    <div class="left">
-      <img src="images/chesspic.jpg" alt="Liam McAfee">
-    </div>
+<h1>Liam McAfee</h1>
 
-    <!-- Right: Bio -->
-    <div class="right">
-      <div class="bio">
-        <p>Hello, my name is Liam McAfee and I am a Computer Science student at Oregon State University graduating in Spring 2026. I have a strong interest in cybersecurity and enjoy learning how systems work, identifying vulnerabilities, and building secure solutions through coding and technical problem solving. I currently work at Oregon State University's ORTSOC (Oregon Research and Teaching Security Operations Center), a cybersecurity “teaching hospital” where students gain hands-on experience in a real security operations environment by monitoring systems, analyzing threats, and helping provide cybersecurity services to organizations that need protection but lack the resources for a full security team. Through my coursework and work experience, I continue to develop my skills in programming, security operations, and problem solving. My goal is to build a career in cybersecurity where I can help protect systems and infrastructure while continuing to grow as a security professional.</p>
-        <ul>
-          <li>Skills: Python, JavaScript, HTML/CSS, Cybersecurity</li>
-          <li>Education: Oregon State University (Class of 2026)</li>
-        </ul>
-      </div>
+<div class="container">
 
-      <!-- Resume -->
-      <div class="resume">
-        <h2>Resume</h2>
-        <p>Check out my <a href="your-resume.pdf" target="_blank">resume</a>.</p>
-      </div>
+<!-- Image -->
+<div class="left">
+<img src="images/chesspic.jpg" alt="Liam McAfee">
+</div>
 
-      <!-- Contact Info -->
-      <div class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:thebeaverliam@gmail.com">thebeaverliam@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/thebeaverliam" target="_blank">thebeaverliam</a></p>
-      </div>
+<!-- Bio -->
+<div class="right">
 
-      <!-- Projects -->
-      <div class="projects">
-        <h2>Some Projects</h2>
-        <a href="https://github.com/thebeaverliam/project1" target="_blank">Project 1</a>
-        <a href="https://github.com/thebeaverliam/project2" target="_blank">Project 2</a>
-        <a href="https://github.com/thebeaverliam/project3" target="_blank">Project 3</a>
-      </div>
-    </div>
-  </div>
+<div class="bio">
+<p>
+Hello, my name is Liam McAfee and I am a Computer Science student at Oregon State University graduating in Spring 2026. I have a strong interest in cybersecurity and enjoy learning how systems work, identifying vulnerabilities, and building secure solutions through coding and technical problem solving. I currently work at Oregon State University's ORTSOC (Oregon Research and Teaching Security Operations Center), a cybersecurity teaching hospital where students gain hands-on experience in a real security operations environment by monitoring systems, analyzing threats, and helping provide cybersecurity services to organizations that need protection but lack the resources for a full security team. Through my coursework and work experience, I continue to develop my skills in programming, security operations, and problem solving. My goal is to build a career in cybersecurity where I can help protect systems and infrastructure while continuing to grow as a security professional.
+</p>
+
+<ul>
+<li>Skills: Python, JavaScript, HTML/CSS, Cybersecurity</li>
+<li>Education: Oregon State University (Class of 2026)</li>
+</ul>
+</div>
+
+<div class="resume">
+<h2>Resume</h2>
+<p>Check out my <a href="resume.pdf" target="_blank">resume</a>.</p>
+</div>
+
+<div class="contact">
+<h2>Contact Me</h2>
+<p>Email: <a href="mailto:thebeaverliam@gmail.com">thebeaverliam@gmail.com</a></p>
+<p>GitHub: <a href="https://github.com/thebeaverliam" target="_blank">thebeaverliam</a></p>
+</div>
+
+<div class="projects">
+<h2>Some Projects</h2>
+<a href="https://github.com/thebeaverliam/project1" target="_blank">Project 1</a>
+<a href="https://github.com/thebeaverliam/project2" target="_blank">Project 2</a>
+<a href="https://github.com/thebeaverliam/project3" target="_blank">Project 3</a>
+</div>
+
+</div>
+</div>
+
 </body>
 </html>
